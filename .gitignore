@@ -27,10 +27,15 @@ lerna-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+frontend/PRD.md
 
 # Coverage / Test output
 coverage/
 .nyc_output/
+
+# Specifications & documentation
+PRD.md
+implementation_plan.md
 
 # Temporary files
 scratch/
