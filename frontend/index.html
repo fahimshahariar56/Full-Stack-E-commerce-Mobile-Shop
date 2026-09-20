@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>AURA ACCESSORIES | Premium Mobile Accessories</title>
+    <meta name="description" content="Discover premium mobile accessories crafted with precision engineering. High-speed chargers, sleek protective cases, smart cables, and audiophile gear." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Anti-FOUC Theme Script -->
+    <script>
+      (function() {
+        try {
+          const storedTheme = localStorage.getItem('theme') || 'system';
+          const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const isDark = storedTheme === 'dark' || (storedTheme === 'system' && systemPrefersDark);
+          
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            const meta = document.querySelector('meta[name="color-scheme"]');
+            if (meta) meta.content = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            const meta = document.querySelector('meta[name="color-scheme"]');
+            if (meta) meta.content = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-surface-light dark:bg-surface-dark text-slate-900 dark:text-slate-100 antialiased min-h-screen transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "mobile-accessories-ecommerce",
+  "version": "1.0.0",
+  "description": "Production-ready Mobile Accessories E-commerce Platform",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm.cmd --prefix backend run dev",
+    "dev:frontend": "npm.cmd --prefix frontend run dev",
+    "install:all": "npm.cmd --prefix backend install && npm.cmd --prefix frontend install",
+    "build:frontend": "npm.cmd --prefix frontend run build",
+    "start:backend": "npm.cmd --prefix backend start"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "tailwind"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "ISC"
+}
